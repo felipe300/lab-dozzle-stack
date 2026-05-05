@@ -1,0 +1,6 @@
+.env
+node_modules
+postgres_data
+portainer_data
+dist
+*.log
