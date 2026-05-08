@@ -100,3 +100,10 @@ Próximas mejoras:
 - CI/CD con GitHub Actions
 - HTTPS con reverse proxy
 - monitoreo con Prometheus + Grafana
+
+## Estado actual de los tests
+
+- Tests de infraestructura de Redis: ✅
+- Tests del endpoint de health check: ✅
+- Tests de integración: ✅
+- Test de infraestructura de PostgreSQL: ⚠ Investigando problema de handshake entre Bun + pg + Testcontainers

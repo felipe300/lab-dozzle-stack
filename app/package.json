@@ -2,14 +2,21 @@
   "name": "app",
   "private": true,
   "type": "module",
-  "module": "index.ts",
   "scripts": {
-    "start": "bun run index.ts"
+    "start": "bun run ./src/index.ts",
+    "test": "bun test",
+    "test:watch": "bun test --watch"
+  },
+  "dependencies": {
+    "pg": "^8.20.0",
+    "redis": "^5.12.1"
   },
   "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
+    "@testcontainers/postgresql": "^11.14.0",
+    "@testcontainers/redis": "^11.14.0",
+    "@types/bun": "latest",
+    "@types/pg": "^8.20.0",
+    "testcontainers": "^11.14.0",
     "typescript": "^5"
   }
 }

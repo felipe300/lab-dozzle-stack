@@ -100,3 +100,10 @@ Planned upgrades:
 - GitHub Actions CI/CD
 - HTTPS with reverse proxy
 - Prometheus + Grafana monitoring
+
+## Current Test Status
+
+- Redis infrastructure tests: ✅
+- Health endpoint tests: ✅
+- Integration tests: ✅
+- PostgreSQL infrastructure test: ⚠ Investigating Bun + pg handshake issue with Testcontainers
